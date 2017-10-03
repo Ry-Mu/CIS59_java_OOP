@@ -15,6 +15,24 @@ public class Animal {
     private String type;
     private String speak;
     
+    
+    public Animal()
+    {
+        name = null;
+        age = -1;
+        type = null;
+        speak = null;
+    }
+    
+    public Animal(String n, int a, String t, String s)
+    {
+        name = n;
+        age = a;
+        type = t;
+        speak = s;
+    }
+    
+    
     public void setName(String n)
     {
         name = n;
