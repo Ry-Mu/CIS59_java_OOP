@@ -47,7 +47,7 @@ public class DateTime
         month = mo;
         day = d;
         year = y;
-        time = t; 
+        time = new Time(t.getHour(), t.getMinute(), t.getSecond()); 
     }
     
     
@@ -109,8 +109,8 @@ public class DateTime
        time.getSecond(t.getSecond());
    }
 */
-   public boolean isValid(Time t)
+   public boolean isValid()
    {
-       return (time.isValid());
+       return (month <= 12 && time.isValid());
    }
 }
